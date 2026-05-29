@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.vercel/
+jogos_gerados.json

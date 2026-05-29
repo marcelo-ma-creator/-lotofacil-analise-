@@ -1,0 +1,9 @@
+{
+  "name": "lotofacil-analise",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd server && node index.js",
+    "build": "cd client && npm install && npm run build"
+  }
+}
