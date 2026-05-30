@@ -11,6 +11,7 @@ function Header({ status }) {
         {status && status.ultimoConcurso && (
           <div className="header-info">
             <span className="badge">Concurso #{status.ultimoConcurso.numero}</span>
+            <span className="badge secondary">{status.ultimoConcurso.data}</span>
             <span className="badge secondary">{status.totalConcursos} analisados</span>
           </div>
         )}

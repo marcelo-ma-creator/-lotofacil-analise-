@@ -94,9 +94,19 @@ function App() {
 
       <main className="content">
         {tab === 'visao-geral' && (
-          <div className="grid-2">
-            <Volante ultimoConcurso={status.ultimoConcurso.dezenas} tendencias={tendencias} />
-            <Ranking pontuacao={pontuacao} />
+          <div>
+            <div className="card ultimo-concurso-card">
+              <h2>📋 Último Concurso: #{status.ultimoConcurso.numero} — {status.ultimoConcurso.data}</h2>
+              <div className="jogo-dezenas">
+                {status.ultimoConcurso.dezenas.map(d => (
+                  <span key={d} className="jogo-num">{String(d).padStart(2, '0')}</span>
+                ))}
+              </div>
+            </div>
+            <div className="grid-2">
+              <Volante ultimoConcurso={status.ultimoConcurso.dezenas} tendencias={tendencias} />
+              <Ranking pontuacao={pontuacao} />
+            </div>
           </div>
         )}
 
