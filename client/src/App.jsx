@@ -110,7 +110,7 @@ function App() {
           </div>
         )}
 
-        {tab === 'tendencias' && <Tendencias tendencias={tendencias} />}
+        {tab === 'tendencias' && <Tendencias />}
 
         {tab === 'jogos' && (
           <div>

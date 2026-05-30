@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function Tendencias({ tendencias }) {
-  if (!tendencias.length) return null;
+function Tendencias() {
+  const [tendencias, setTendencias] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [erro, setErro] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/tendencias')
+      .then(r => r.json())
+      .then(data => {
+        setTendencias(data);
+        setLoading(false);
+      })
+      .catch(e => {
+        setErro('Erro ao carregar tendências');
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div className="card"><h2>📈 Tendências</h2><p>Carregando...</p></div>;
+  if (erro) return <div className="card"><h2>📈 Tendências</h2><p>{erro}</p></div>;
+  if (!tendencias.length) return <div className="card"><h2>📈 Tendências</h2><p>Sem dados disponíveis.</p></div>;
 
   const emAlta = tendencias.filter(t => t.tendencia > 0);
   const emBaixa = tendencias.filter(t => t.tendencia < 0).sort((a, b) => a.tendencia - b.tendencia);
