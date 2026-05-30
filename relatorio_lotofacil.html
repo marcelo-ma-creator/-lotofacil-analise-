@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Lotofácil - Relatório Avançado</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #1a1a2e; color: #eee; padding: 20px; }
+h1 { text-align: center; color: #00d4ff; margin-bottom: 5px; }
+h2 { color: #00d4ff; margin: 30px 0 15px; border-bottom: 1px solid #333; padding-bottom: 5px; }
+h3 { color: #ffd700; margin-bottom: 8px; }
+.subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.card { background: #16213e; border-radius: 10px; padding: 20px; border: 1px solid #333; }
+.volante { display: inline-grid; grid-template-columns: repeat(5, 50px); gap: 5px; margin: 10px 0; }
+.volante br { display: none; }
+.num { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #0f3460; font-weight: bold; font-size: 14px; }
+.num.marcado { background: #e94560; color: #fff; }
+.num.alta { box-shadow: 0 0 8px #4caf50; }
+.num.baixa { box-shadow: 0 0 8px #f44336; }
+.barra-row { display: flex; align-items: center; margin: 3px 0; }
+.barra-label { width: 50px; font-size: 12px; color: #aaa; }
+.barra { background: linear-gradient(90deg, #00d4ff, #e94560); height: 20px; border-radius: 3px; color: #fff; font-size: 11px; display: flex; align-items: center; padding-left: 5px; min-width: 30px; }
+.jogo-card { background: #0f3460; border-radius: 8px; padding: 15px; margin: 10px 0; border-left: 4px solid #e94560; }
+.jogo-dezenas { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0; }
+.jogo-num { background: #e94560; color: #fff; padding: 5px 10px; border-radius: 5px; font-weight: bold; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 15px 0; }
+.stat-card { background: #0f3460; padding: 15px; border-radius: 8px; text-align: center; }
+.stat-card h4 { color: #ffd700; font-size: 24px; }
+.stat-card p { color: #aaa; font-size: 12px; margin-top: 5px; }
+.evo-row { display: flex; align-items: center; margin: 3px 0; }
+.evo-row span { width: 60px; font-size: 11px; color: #aaa; }
+.evo-bar { height: 18px; border-radius: 3px; color: #fff; font-size: 11px; display: flex; align-items: center; padding-left: 5px; min-width: 20px; }
+.modo-badge { display: inline-block; background: #e94560; padding: 5px 15px; border-radius: 20px; font-size: 12px; margin: 5px; }
+.info { color: #888; font-size: 12px; margin-top: 20px; text-align: center; }
+</style>
+</head>
+<body>
+<h1>🎯 Lotofácil — Relatório Avançado</h1>
+<p class="subtitle">Concurso #3630 | 321 concursos analisados | Modo: <span class="modo-badge">ECONÔMICO</span></p>
+
+<div class="grid">
+<div class="card">
+<h2>🎰 Volante — Último Concurso</h2>
+<p style="color:#888;font-size:12px">Vermelho = sorteado | Borda verde = tendência alta | Borda vermelha = tendência baixa</p>
+<div class="volante"><div class="num  alta">01</div><div class="num marcado baixa">02</div><div class="num marcado baixa">03</div><div class="num marcado ">04</div><div class="num marcado baixa">05</div><br><div class="num marcado baixa">06</div><div class="num marcado alta">07</div><div class="num marcado alta">08</div><div class="num  baixa">09</div><div class="num  baixa">10</div><br><div class="num marcado baixa">11</div><div class="num marcado baixa">12</div><div class="num  alta">13</div><div class="num marcado alta">14</div><div class="num marcado alta">15</div><br><div class="num  alta">16</div><div class="num marcado alta">17</div><div class="num  baixa">18</div><div class="num marcado alta">19</div><div class="num  baixa">20</div><br><div class="num  ">21</div><div class="num  baixa">22</div><div class="num marcado alta">23</div><div class="num marcado alta">24</div><div class="num  baixa">25</div><br></div>
+<p style="margin-top:10px">Dezenas: [2, 3, 4, 5, 6, 7, 8, 11, 12, 14, 15, 17, 19, 23, 24]</p>
+</div>
+<div class="card">
+<h2>📊 Ranking de Pontuação</h2>
+<div class="barra-row"><span class="barra-label">24 ↑</span><div class="barra" style="width:100%">49.7</div></div><div class="barra-row"><span class="barra-label">19 ↑</span><div class="barra" style="width:99%">49.2</div></div><div class="barra-row"><span class="barra-label">17 ↑</span><div class="barra" style="width:97%">48.4</div></div><div class="barra-row"><span class="barra-label">23 ↑</span><div class="barra" style="width:97%">48.3</div></div><div class="barra-row"><span class="barra-label">01 ↑</span><div class="barra" style="width:96%">47.8</div></div><div class="barra-row"><span class="barra-label">14 ↑</span><div class="barra" style="width:96%">47.7</div></div><div class="barra-row"><span class="barra-label">15 ↑</span><div class="barra" style="width:96%">47.5</div></div><div class="barra-row"><span class="barra-label">10 ↓</span><div class="barra" style="width:94%">46.6</div></div><div class="barra-row"><span class="barra-label">21 ↑</span><div class="barra" style="width:92%">45.7</div></div><div class="barra-row"><span class="barra-label">13 ↑</span><div class="barra" style="width:92%">45.6</div></div><div class="barra-row"><span class="barra-label">04 ↑</span><div class="barra" style="width:92%">45.5</div></div><div class="barra-row"><span class="barra-label">08 ↑</span><div class="barra" style="width:91%">45.5</div></div><div class="barra-row"><span class="barra-label">07 ↑</span><div class="barra" style="width:90%">44.8</div></div><div class="barra-row"><span class="barra-label">16 ↑</span><div class="barra" style="width:90%">44.5</div></div><div class="barra-row"><span class="barra-label">02 ↓</span><div class="barra" style="width:85%">42.2</div></div><div class="barra-row"><span class="barra-label">05 ↓</span><div class="barra" style="width:85%">42.1</div></div><div class="barra-row"><span class="barra-label">06 ↓</span><div class="barra" style="width:85%">42.1</div></div><div class="barra-row"><span class="barra-label">25 ↓</span><div class="barra" style="width:85%">42.0</div></div><div class="barra-row"><span class="barra-label">20 ↓</span><div class="barra" style="width:84%">42.0</div></div><div class="barra-row"><span class="barra-label">11 ↓</span><div class="barra" style="width:83%">41.2</div></div><div class="barra-row"><span class="barra-label">09 ↓</span><div class="barra" style="width:82%">41.0</div></div><div class="barra-row"><span class="barra-label">22 ↓</span><div class="barra" style="width:80%">39.7</div></div><div class="barra-row"><span class="barra-label">12 ↓</span><div class="barra" style="width:78%">38.9</div></div><div class="barra-row"><span class="barra-label">03 ↓</span><div class="barra" style="width:77%">38.1</div></div><div class="barra-row"><span class="barra-label">18 ↓</span><div class="barra" style="width:73%">36.3</div></div>
+</div>
+</div>
+
+<h2>🎲 Jogos Gerados (6)</h2>
+<div class="jogo-card"><h3>Jogo 1: TENDÊNCIA (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">04</span><span class="jogo-num">07</span><span class="jogo-num">09</span><span class="jogo-num">10</span><span class="jogo-num">13</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">16</span><span class="jogo-num">17</span><span class="jogo-num">19</span><span class="jogo-num">20</span><span class="jogo-num">21</span><span class="jogo-num">23</span><span class="jogo-num">24</span></div><p>Soma: 213 | Par/Ímpar: 6/9</p></div><div class="jogo-card"><h3>Jogo 2: Z-SCORE (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">02</span><span class="jogo-num">04</span><span class="jogo-num">08</span><span class="jogo-num">09</span><span class="jogo-num">10</span><span class="jogo-num">13</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">17</span><span class="jogo-num">19</span><span class="jogo-num">22</span><span class="jogo-num">23</span><span class="jogo-num">24</span><span class="jogo-num">25</span></div><p>Soma: 206 | Par/Ímpar: 7/8</p></div><div class="jogo-card"><h3>Jogo 3: MARKOV (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">04</span><span class="jogo-num">05</span><span class="jogo-num">07</span><span class="jogo-num">08</span><span class="jogo-num">09</span><span class="jogo-num">10</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">16</span><span class="jogo-num">19</span><span class="jogo-num">21</span><span class="jogo-num">23</span><span class="jogo-num">24</span><span class="jogo-num">25</span></div><p>Soma: 201 | Par/Ímpar: 6/9</p></div><div class="jogo-card"><h3>Jogo 4: ENTROPIA (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">05</span><span class="jogo-num">07</span><span class="jogo-num">08</span><span class="jogo-num">09</span><span class="jogo-num">10</span><span class="jogo-num">13</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">17</span><span class="jogo-num">19</span><span class="jogo-num">20</span><span class="jogo-num">21</span><span class="jogo-num">23</span><span class="jogo-num">24</span></div><p>Soma: 206 | Par/Ímpar: 5/10</p></div><div class="jogo-card"><h3>Jogo 5: ATRASO+CHI² (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">04</span><span class="jogo-num">07</span><span class="jogo-num">08</span><span class="jogo-num">09</span><span class="jogo-num">10</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">16</span><span class="jogo-num">17</span><span class="jogo-num">19</span><span class="jogo-num">20</span><span class="jogo-num">21</span><span class="jogo-num">23</span><span class="jogo-num">24</span></div><p>Soma: 208 | Par/Ímpar: 7/8</p></div><div class="jogo-card"><h3>Jogo 6: BALANCEADO (calibrado)</h3><div class="jogo-dezenas"><span class="jogo-num">01</span><span class="jogo-num">02</span><span class="jogo-num">04</span><span class="jogo-num">08</span><span class="jogo-num">10</span><span class="jogo-num">13</span><span class="jogo-num">14</span><span class="jogo-num">15</span><span class="jogo-num">16</span><span class="jogo-num">17</span><span class="jogo-num">19</span><span class="jogo-num">21</span><span class="jogo-num">23</span><span class="jogo-num">24</span><span class="jogo-num">25</span></div><p>Soma: 212 | Par/Ímpar: 7/8</p></div>
+
+<h2>📈 Dashboard de Performance</h2>
+<div class="card">
+<p>Nenhum jogo conferido ainda. Execute novamente após o sorteio.</p>
+</div>
+
+<h2>🔄 Ciclos Detectados</h2>
+<div class="card">
+<table style="width:100%;font-size:13px">
+<tr style="color:#00d4ff"><th>Dezena</th><th>Intervalo Médio</th><th>CV</th><th>Atraso Atual</th><th>Status</th></tr>
+<tr><td>10</td><td>1.5 ±0.8</td><td>0.527</td><td>2</td><td style="color:#f44336">IMINENTE</td></tr><tr><td>09</td><td>1.6 ±0.8</td><td>0.537</td><td>2</td><td style="color:#f44336">IMINENTE</td></tr><tr><td>04</td><td>1.6 ±0.9</td><td>0.540</td><td>0</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>14</td><td>1.6 ±0.9</td><td>0.541</td><td>0</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>07</td><td>1.7 ±0.9</td><td>0.554</td><td>0</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>22</td><td>1.7 ±0.9</td><td>0.568</td><td>1</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>16</td><td>1.7 ±1.0</td><td>0.579</td><td>1</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>01</td><td>1.7 ±1.0</td><td>0.584</td><td>1</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>12</td><td>1.6 ±1.0</td><td>0.600</td><td>0</td><td style="color:#888">AGUARDANDO</td></tr><tr><td>19</td><td>1.6 ±1.0</td><td>0.604</td><td>0</td><td style="color:#888">AGUARDANDO</td></tr>
+</table>
+</div>
+
+<p class="info">⚠ Loteria é aleatória. Este sistema usa estatística para informar, não para garantir resultados. Jogue com responsabilidade.</p>
+<p class="info">Gerado em: 29/05/2026, 19:31:21</p>
+</body>
+</html>
