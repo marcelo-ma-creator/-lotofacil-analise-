@@ -111,7 +111,7 @@ function calcularTrios(concursos) {
   return Object.entries(t).map(([k,f])=>({dezenas:k.split('-').map(Number),freq:f})).sort((a,b)=>b.freq-a.freq);
 }
 
-const MODOS={economico:{nome:'ECONÔMICO',quantidade:6,tentativas:5000,filtroSigma:1.0},normal:{nome:'NORMAL',quantidade:10,tentativas:3000,filtroSigma:1.5},agressivo:{nome:'AGRESSIVO',quantidade:20,tentativas:2000,filtroSigma:2.0}};
+const MODOS={economico:{nome:'ECONÔMICO',quantidade:6,tentativas:8000,filtroSigma:2.0},normal:{nome:'NORMAL',quantidade:10,tentativas:5000,filtroSigma:2.5},agressivo:{nome:'AGRESSIVO',quantidade:20,tentativas:3000,filtroSigma:3.0}};
 
 function gerarJogos(concursos, modo='normal', pesos=null) {
   const config=MODOS[modo]||MODOS.normal;const n=concursos.length;const pont=calcularPontuacaoAvancada(concursos,pesos);
